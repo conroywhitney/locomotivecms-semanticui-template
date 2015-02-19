@@ -1,0 +1,32 @@
+---
+title: Bar
+slug: bar
+is_layout: false
+listed: true
+position: 3
+published: true
+cache_strategy: none
+response_type: text/html
+seo_title: Bar - LocomotiveCMS + SemanticUI Example
+meta_description: Et tollit placerat adipiscing mea, impetus conclusionemque cum ei, vel saperet luptatum ea. Feugiat accusam omittantur et per, est quando ceteros accusata cu.
+---
+{% extends 'index' %}
+
+{% block 'main' %}
+
+  <div class="ui vertical segment">
+    <div class="ui very relaxed stackable page grid">
+      <div class="row">
+        <div class="column">
+          <h1 class="center aligned ui header">
+            {{ page.title }}
+          </h1>
+          <h2 class="center aligned ui header">
+            {{ meta_description }}
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
